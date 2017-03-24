@@ -1,0 +1,5 @@
+ompiled class file
+*.class
+
+# Log file
+*.log
