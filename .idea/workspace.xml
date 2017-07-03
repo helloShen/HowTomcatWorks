@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5c5e17c-122c-4525-8295-0e91b77627bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Articles/The_Singleton_Pattern.doc" afterPath="$PROJECT_DIR$/Articles/The_Singleton_Pattern.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Articles/Working_with_Threads.doc" afterPath="$PROJECT_DIR$/Articles/Working_with_Threads.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PropertiesFilesCopier.class" afterPath="$PROJECT_DIR$/PropertiesFilesCopier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-beanutils.jar" afterPath="$PROJECT_DIR$/lib/commons-beanutils.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-collections.jar" afterPath="$PROJECT_DIR$/lib/commons-collections.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-daemon.jar" afterPath="$PROJECT_DIR$/lib/commons-daemon.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-digester.jar" afterPath="$PROJECT_DIR$/lib/commons-digester.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-logging.jar" afterPath="$PROJECT_DIR$/lib/commons-logging.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-modeler.jar" afterPath="$PROJECT_DIR$/lib/commons-modeler.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jaas.jar" afterPath="$PROJECT_DIR$/lib/jaas.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jakarta-regexp-1.2.jar" afterPath="$PROJECT_DIR$/lib/jakarta-regexp-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jcert.jar" afterPath="$PROJECT_DIR$/lib/jcert.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jnet.jar" afterPath="$PROJECT_DIR$/lib/jnet.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jsse.jar" afterPath="$PROJECT_DIR$/lib/jsse.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/mx4j.jar" afterPath="$PROJECT_DIR$/lib/mx4j.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/naming-common.jar" afterPath="$PROJECT_DIR$/lib/naming-common.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/naming-factory.jar" afterPath="$PROJECT_DIR$/lib/naming-factory.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/naming-resources.jar" afterPath="$PROJECT_DIR$/lib/naming-resources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/servlet.jar" afterPath="$PROJECT_DIR$/lib/servlet.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tomcat-util.jar" afterPath="$PROJECT_DIR$/lib/tomcat-util.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xercesImpl.jar" afterPath="$PROJECT_DIR$/lib/xercesImpl.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xmlParserAPIs.jar" afterPath="$PROJECT_DIR$/lib/xmlParserAPIs.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/WEB-INF/classes/ModernServlet.class" afterPath="$PROJECT_DIR$/myApp/WEB-INF/classes/ModernServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/WEB-INF/classes/PrimitiveServlet.class" afterPath="$PROJECT_DIR$/myApp/WEB-INF/classes/PrimitiveServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/WEB-INF/classes/SessionServlet.class" afterPath="$PROJECT_DIR$/myApp/WEB-INF/classes/SessionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/app1/WEB-INF/classes/ModernServlet.class" afterPath="$PROJECT_DIR$/webapps/app1/WEB-INF/classes/ModernServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/app1/WEB-INF/classes/PrimitiveServlet.class" afterPath="$PROJECT_DIR$/webapps/app1/WEB-INF/classes/PrimitiveServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/ModernServlet.class" afterPath="$PROJECT_DIR$/webroot/ModernServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/PrimitiveServlet.class" afterPath="$PROJECT_DIR$/webroot/PrimitiveServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/images/logo.gif" afterPath="$PROJECT_DIR$/webroot/images/logo.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tomcat4.1.12.license" afterPath="$PROJECT_DIR$/Tomcat4.1.12.license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/server.xml" afterPath="$PROJECT_DIR$/conf/server.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/tomcat-users.xml" afterPath="$PROJECT_DIR$/conf/tomcat-users.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/employee1.xml" afterPath="$PROJECT_DIR$/etc/employee1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/employee2.xml" afterPath="$PROJECT_DIR$/etc/employee2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/ex14.xml" afterPath="$PROJECT_DIR$/etc/ex14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings.properties" afterPath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/ex03/pyrmont/connector/http/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linux-compile.sh" afterPath="$PROJECT_DIR$/linux-compile.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mx4j.license" afterPath="$PROJECT_DIR$/mx4j.license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/authenticator/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/cluster/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/cluster/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/cluster/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/cluster/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/http/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/http10/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/http10/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/connector/http10/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/connector/http10/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/core/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/core/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/core/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/core/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/loader/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/loader/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/loader/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/loader/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/logger/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/realm/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/servlets/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/servlets/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/servlets/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/servlets/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/session/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/session/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/session/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/session/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/startup/Authenticators.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/startup/Authenticators.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/startup/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/startup/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/startup/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/startup/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/users/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/users/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/util/CharsetMapperDefault.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/util/CharsetMapperDefault.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/util/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/util/ServerInfo.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/util/ServerInfo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/catalina/valves/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/naming/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/naming/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/naming/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/org/apache/naming/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/naming/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/naming/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/naming/resources/LocalStrings.properties" afterPath="$PROJECT_DIR$/org/apache/naming/resources/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org/apache/naming/resources/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/org/apache/naming/resources/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SessionServlet.java" afterPath="$PROJECT_DIR$/src/SessionServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainysoftware/pyrmont/util/HttpSniffer.java" afterPath="$PROJECT_DIR$/src/com/brainysoftware/pyrmont/util/HttpSniffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex01/pyrmont/HttpServer.java" afterPath="$PROJECT_DIR$/src/ex01/pyrmont/HttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex01/pyrmont/Request.java" afterPath="$PROJECT_DIR$/src/ex01/pyrmont/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex01/pyrmont/Response.java" afterPath="$PROJECT_DIR$/src/ex01/pyrmont/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/Constants.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/HttpServer1.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/HttpServer1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/HttpServer2.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/HttpServer2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/Request.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/RequestFacade.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/RequestFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/Response.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/ResponseFacade.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/ResponseFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/ServletProcessor1.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/ServletProcessor1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/ServletProcessor2.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/ServletProcessor2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex02/pyrmont/StaticResourceProcessor.java" afterPath="$PROJECT_DIR$/src/ex02/pyrmont/StaticResourceProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/ServletProcessor.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/ServletProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/StaticResourceProcessor.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/StaticResourceProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/RequestStream.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/RequestStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/ResponseStream.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/ResponseStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/ResponseWriter.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/ResponseWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/Constants.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpConnector.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpHeader.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpProcessor.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequest.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequestFacade.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequestFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequestLine.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpRequestLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpResponse.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpResponseFacade.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/HttpResponseFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/SocketInputStream.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/connector/http/SocketInputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex03/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex03/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex04/pyrmont/core/SimpleContainer.java" afterPath="$PROJECT_DIR$/src/ex04/pyrmont/core/SimpleContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex04/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex04/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContext.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContextMapper.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContextMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContextValve.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleContextValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleLoader.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/startup/Bootstrap1.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/startup/Bootstrap1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/startup/Bootstrap2.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/startup/Bootstrap2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/valves/ClientIPLoggerValve.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/valves/ClientIPLoggerValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex05/pyrmont/valves/HeaderLoggerValve.java" afterPath="$PROJECT_DIR$/src/ex05/pyrmont/valves/HeaderLoggerValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContext.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextLifecycleListener.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextLifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextMapper.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextValve.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleContextValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleLoader.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex06/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex06/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContext.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextLifecycleListener.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextLifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextMapper.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextValve.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleContextValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleLoader.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex07/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex07/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex08/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex08/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex08/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex09/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex09/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex09/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimplePipeline.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimplePipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleWrapper.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleWrapperValve.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/core/SimpleWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/realm/SimpleRealm.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/realm/SimpleRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/realm/SimpleUserDatabaseRealm.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/realm/SimpleUserDatabaseRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/startup/Bootstrap1.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/startup/Bootstrap1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex10/pyrmont/startup/Bootstrap2.java" afterPath="$PROJECT_DIR$/src/ex10/pyrmont/startup/Bootstrap2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex11/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex11/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex11/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex11/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex13/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex13/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex13/pyrmont/startup/Bootstrap1.java" afterPath="$PROJECT_DIR$/src/ex13/pyrmont/startup/Bootstrap1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex13/pyrmont/startup/Bootstrap2.java" afterPath="$PROJECT_DIR$/src/ex13/pyrmont/startup/Bootstrap2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex14/pyrmont/core/SimpleContextConfig.java" afterPath="$PROJECT_DIR$/src/ex14/pyrmont/core/SimpleContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex14/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex14/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex14/pyrmont/startup/Stopper.java" afterPath="$PROJECT_DIR$/src/ex14/pyrmont/startup/Stopper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Address.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Address.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Employee.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/EmployeeRuleSet.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/EmployeeRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Office.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Office.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test01.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test01.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test02.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test02.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test03.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/digestertest/Test03.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex15/pyrmont/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/ex15/pyrmont/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex16/pyrmont/shutdownhook/MySwingApp.java" afterPath="$PROJECT_DIR$/src/ex16/pyrmont/shutdownhook/MySwingApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest1/Car.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest1/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest1/ModelAgent.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest1/ModelAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/Car.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/ModelAgent.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/ModelAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/car-mbean-descriptor.xml" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/modelmbeantest2/car-mbean-descriptor.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/Car.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/CarMBean.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/CarMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/StandardAgent.java" afterPath="$PROJECT_DIR$/src/ex20/pyrmont/standardmbeantest/StandardAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Authenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Authenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Cluster.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Cluster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Connector.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Connector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Contained.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Contained.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Container.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Container.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ContainerEvent.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ContainerEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ContainerListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ContainerListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ContainerServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ContainerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Context.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Context.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/DefaultContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/DefaultContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Deployer.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Deployer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Engine.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Engine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Globals.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Globals.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Group.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Host.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Host.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/HttpRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/HttpRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/HttpResponse.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/HttpResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/InstanceEvent.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/InstanceEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/InstanceListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/InstanceListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Lifecycle.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Lifecycle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleEvent.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleException.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/LifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Loader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Loader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Logger.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Logger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Manager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Manager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Mapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Mapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Pipeline.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Pipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Realm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Realm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Request.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Response.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Role.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Server.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ServerFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ServerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Service.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Session.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Session.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/SessionEvent.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/SessionEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/SessionListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/SessionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Store.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Store.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/User.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/UserDatabase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/UserDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Valve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Valve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ValveContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ValveContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/Wrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/Wrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/AuthenticatorBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/AuthenticatorBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/BasicAuthenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/BasicAuthenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/DigestAuthenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/DigestAuthenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/FormAuthenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/FormAuthenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/NonLoginAuthenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/NonLoginAuthenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SSLAuthenticator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SSLAuthenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SavedRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SavedRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SingleSignOn.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/authenticator/SingleSignOn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterMemberInfo.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterMemberInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterReceiver.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterSender.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterSender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterSessionBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ClusterSessionBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/MulticastReceiver.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/MulticastReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/MulticastSender.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/MulticastSender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ReplicationWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/ReplicationWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/cluster/StandardCluster.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/cluster/StandardCluster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/RequestWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseWriter.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/DefaultHeaders.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/DefaultHeaders.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpConnector.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpHeader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestImpl.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestLine.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpResponseImpl.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpResponseImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpResponseStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpResponseStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpConnector.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpProcessor.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpRequestImpl.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpRequestImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpResponseImpl.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/HttpResponseImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/connector/http10/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationContextFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationContextFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationDispatcher.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationFilterChain.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationFilterChain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationFilterConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationFilterConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationHttpRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationHttpRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationHttpResponse.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationHttpResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationResponse.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ApplicationResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/ContainerBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/ContainerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/FastEngineMapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/FastEngineMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/MappingRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/MappingRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/NamingContextListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/NamingContextListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContextMapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContextMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContextValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardContextValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardDefaultContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardDefaultContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngine.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngineMapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngineMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngineValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardEngineValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHost.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostDeployer.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostDeployer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostMapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardHostValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardPipeline.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardPipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardServer.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardService.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapperFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapperFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapperValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/core/StandardWrapperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ApplicationParameter.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ApplicationParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextEjb.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextEjb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextEnvironment.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextEnvironment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextLocalEjb.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextLocalEjb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextResource.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextResourceLink.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ContextResourceLink.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ErrorPage.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ErrorPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/FilterDef.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/FilterDef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/FilterMap.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/FilterMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/LoginConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/LoginConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/NamingResources.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/NamingResources.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ResourceParams.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/ResourceParams.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/SecurityCollection.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/SecurityCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/SecurityConstraint.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/SecurityConstraint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/deploy/Test.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/deploy/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/Extension.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/Extension.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/Reloader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/Reloader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/ResourceEntry.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/ResourceEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/StandardClassLoader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/StandardClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/WebappClassLoader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/WebappClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/loader/WebappLoader.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/loader/WebappLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/FileLogger.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/FileLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/LoggerBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/LoggerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/SystemErrLogger.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/SystemErrLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/logger/SystemOutLogger.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/logger/SystemOutLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ClassNameMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ClassNameMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ConnectorMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ConnectorMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextEnvironmentMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextEnvironmentMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextResourceLinkMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextResourceLinkMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextResourceMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ContextResourceMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/DefaultContextMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/DefaultContextMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/GlobalResourcesLifecycleListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/GlobalResourcesLifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/GroupMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/GroupMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MBeanFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MBeanFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MBeanUtils.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MBeanUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MemoryUserDatabaseMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/MemoryUserDatabaseMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/NamingResourcesMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/NamingResourcesMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/RoleMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/RoleMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ServerLifecycleListener.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/ServerLifecycleListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardContextMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardContextMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardEngineMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardEngineMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardHostMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardHostMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardServerMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardServerMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardServiceMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/StandardServiceMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/UserMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/UserMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/mbeans-descriptors.xml" afterPath="$PROJECT_DIR$/src/org/apache/catalina/mbeans/mbeans-descriptors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/net/DefaultServerSocketFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/net/DefaultServerSocketFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/net/SSLServerSocketFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/net/SSLServerSocketFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/net/ServerSocketFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/net/ServerSocketFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/GenericPrincipal.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/GenericPrincipal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASCallbackHandler.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASCallbackHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASMemoryLoginModule.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASMemoryLoginModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASRealm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/JAASRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/JDBCRealm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/JDBCRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/JNDIRealm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/JNDIRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/MemoryRealm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/MemoryRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/MemoryRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/MemoryRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/RealmBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/RealmBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/realm/UserDatabaseRealm.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/realm/UserDatabaseRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/CGIServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/CGIServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/DefaultServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/DefaultServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/HTMLManagerServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/HTMLManagerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/InvokerHttpRequest.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/InvokerHttpRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/InvokerServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/InvokerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/ManagerServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/ManagerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/servlets/WebdavServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/servlets/WebdavServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/DistributedManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/DistributedManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/FileStore.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/FileStore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/JDBCStore.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/JDBCStore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/ManagerBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/ManagerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/PersistentManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/PersistentManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/PersistentManagerBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/PersistentManagerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardSession.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardSessionFacade.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/StandardSessionFacade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/session/StoreBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/session/StoreBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/ByteArrayServletOutputStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/ByteArrayServletOutputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/ResponseIncludeWrapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/ResponseIncludeWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSICommand.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSICommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIEcho.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIEcho.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIExec.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIExec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIExternalResolver.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIExternalResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIFlastmod.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIFlastmod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIFsize.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIFsize.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIInclude.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIInclude.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIMediator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIMediator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIPrintenv.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIPrintenv.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIProcessor.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServlet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServletExternalResolver.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServletExternalResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServletRequestUtil.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIServletRequestUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSISet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSISet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIStopProcessingException.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/ssi/SSIStopProcessingException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Authenticators.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Authenticators.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/BootstrapService.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/BootstrapService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/BootstrapServiceContext.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/BootstrapServiceContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Catalina.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Catalina.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaManagerMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaManagerMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaService.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/CatalinaService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/ClassLoaderFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/ClassLoaderFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/ContextConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/ContextConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/ContextRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/ContextRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/CopyParentClassLoaderRule.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/CopyParentClassLoaderRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Embedded.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Embedded.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/EmbeddedManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/EmbeddedManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/EmbeddedManagerMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/EmbeddedManagerMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/EngineConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/EngineConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/EngineRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/EngineRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/HomesUserDatabase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/HomesUserDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/HostConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/HostConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/HostRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/HostRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/LifecycleListenerRule.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/LifecycleListenerRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/NamingRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/NamingRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/PasswdUserDatabase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/PasswdUserDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/SecurityClassLoad.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/SecurityClassLoad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/TldRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/TldRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/Tool.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/Tool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/UserConfig.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/UserConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/UserDatabase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/UserDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/startup/WebRuleSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/startup/WebRuleSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractGroup.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractRole.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractUser.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/AbstractUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryGroup.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryRole.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUser.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUserDatabase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUserDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUserDatabaseFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/users/MemoryUserDatabaseFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/Base64.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/Base64.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/CGIProcessEnvironment.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/CGIProcessEnvironment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/CharsetMapper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/CharsetMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/CharsetMapperDefault.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/CharsetMapperDefault.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/CookieTools.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/CookieTools.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/CustomObjectInputStream.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/CustomObjectInputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/DOMWriter.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/DOMWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/DateTool.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/DateTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/Enumerator.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/Enumerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/FastDateFormat.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/FastDateFormat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/FastHttpDateFormat.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/FastHttpDateFormat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/HexUtils.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/HexUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/IOTools.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/IOTools.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/InstanceSupport.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/InstanceSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/LifecycleSupport.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/LifecycleSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/MD5Encoder.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/MD5Encoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/MIME2Java.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/MIME2Java.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ParameterMap.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ParameterMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ProcessEnvironment.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ProcessEnvironment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ProcessHelper.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ProcessHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/Queue.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/Queue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/RequestUtil.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/RequestUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ResourceSet.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ResourceSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ServerInfo.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ServerInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/ServerInfo.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/ServerInfo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/Strftime.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/Strftime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/StringManager.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/StringManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/StringParser.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/StringParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/URL.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/URL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/URLEncoder.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/URLEncoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/util/XMLWriter.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/util/XMLWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/AccessLogValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/AccessLogValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/CertificatesValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/CertificatesValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/ErrorDispatcherValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/ErrorDispatcherValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/ErrorReportValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/ErrorReportValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/JDBCAccessLogValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/JDBCAccessLogValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/RemoteAddrValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/RemoteAddrValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/RemoteHostValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/RemoteHostValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/RequestDumperValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/RequestDumperValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/RequestFilterValve.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/RequestFilterValve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/catalina/valves/ValveBase.java" afterPath="$PROJECT_DIR$/src/org/apache/catalina/valves/ValveBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/ContextAccessController.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/ContextAccessController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/ContextBindings.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/ContextBindings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/EjbRef.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/EjbRef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/JndiPermission.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/JndiPermission.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/naming/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NameParserImpl.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NameParserImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingContextBindingsEnumeration.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingContextBindingsEnumeration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingContextEnumeration.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingContextEnumeration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingEntry.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingService.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/NamingServiceMBean.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/NamingServiceMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/ResourceEnvRef.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/ResourceEnvRef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/ResourceLinkRef.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/ResourceLinkRef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/ResourceRef.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/ResourceRef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/SelectorContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/SelectorContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/StringManager.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/StringManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/TransactionRef.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/TransactionRef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/java/javaURLContextFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/java/javaURLContextFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/BaseDirContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/BaseDirContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/Constants.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLConnection.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLStreamHandler.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLStreamHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLStreamHandlerFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/DirContextURLStreamHandlerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/FileDirContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/FileDirContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/LocalStrings.properties" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/LocalStrings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/LocalStrings_ja.properties" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/LocalStrings_ja.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/ProxyDirContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/ProxyDirContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/RecyclableNamingEnumeration.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/RecyclableNamingEnumeration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/Resource.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/Resource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/ResourceAttributes.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/ResourceAttributes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/WARDirContext.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/WARDirContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/apache/naming/resources/jndi/Handler.java" afterPath="$PROJECT_DIR$/src/org/apache/naming/resources/jndi/Handler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/MySwingApp.java" afterPath="$PROJECT_DIR$/src/test/MySwingApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/MySwingAppWithShutdownHook.java" afterPath="$PROJECT_DIR$/src/test/MySwingAppWithShutdownHook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/RunnableDemo.java" afterPath="$PROJECT_DIR$/src/test/RunnableDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/ShutdownHookDemo.java" afterPath="$PROJECT_DIR$/src/test/ShutdownHookDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/ThreadDemo.java" afterPath="$PROJECT_DIR$/src/test/ThreadDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/UseDigesterExample.java" afterPath="$PROJECT_DIR$/src/test/UseDigesterExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/UseRequestUtilExample.java" afterPath="$PROJECT_DIR$/src/test/UseRequestUtilExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/UseStringParserExample.java" afterPath="$PROJECT_DIR$/src/test/UseStringParserExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/app1/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapps/app1/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/manager.xml" afterPath="$PROJECT_DIR$/webapps/manager.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/myadmin.xml" afterPath="$PROJECT_DIR$/webapps/myadmin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/ModernServlet.java" afterPath="$PROJECT_DIR$/webroot/ModernServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/PrimitiveServlet.java" afterPath="$PROJECT_DIR$/webroot/PrimitiveServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/SessionServlet.java" afterPath="$PROJECT_DIR$/webroot/SessionServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/index.html" afterPath="$PROJECT_DIR$/webroot/index.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="linux-compile.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linux-compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-linux-compile.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-linux-compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SessionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpSniffer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/brainysoftware/pyrmont/util/HttpSniffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/linux-compile.sh" />
+        <option value="$PROJECT_DIR$/my-linux-compile.sh" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brainysoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyrmont" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HowTomcatWorks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ex01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyrmont" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5c5e17c-122c-4525-8295-0e91b77627bf" name="Default" comment="" />
+      <created>1498949057564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498949057564</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/linux-compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linux-compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mx4j.license">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainysoftware/pyrmont/util/HttpSniffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linux-compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SessionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-linux-compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
