@@ -3,3 +3,7 @@ ompiled class file
 
 # Log file
 *.log
+
+# IntelliJ config file
+.idea/
+.idea/workspace.xml
