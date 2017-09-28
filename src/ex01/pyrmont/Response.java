@@ -18,7 +18,9 @@ public class Response {
   private static final int BUFFER_SIZE = 1024;
   Request request;
   OutputStream output;
-
+  /**
+   * 绑定服务端已绑定套接字的输出流。
+   */
   public Response(OutputStream output) {
     this.output = output;
   }
@@ -31,6 +33,10 @@ public class Response {
     byte[] bytes = new byte[BUFFER_SIZE];
     FileInputStream fis = null;
     try {
+      /**
+       * @param String parent   [客户请求的静态资源存放的根目录]
+       * @param String child   [客户请求的静态资源的名字]
+       */
       File file = new File(HttpServer.WEB_ROOT, request.getUri());
       if (file.exists()) {
         fis = new FileInputStream(file);

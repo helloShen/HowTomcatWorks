@@ -1,0 +1,58 @@
+#!/bin/zsh
+#############################################################
+###
+### How Tomcat Works - Chapter 1
+### Use this Script to run each exercise in Chapter 1
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+MAIN_DIR="/Users/Wei/github/HowTomcatWorks/solutions"
+CLASS_DIR="${MAIN_DIR}/bin/"
+SRC_DIR="${MAIN_DIR}/src"
+SCRIP_DIR="${MAIN_DIR}/sh"
+
+PACK="com/ciaoshen/howtomcatworks/ex01"
+CLASS_PREFIX="com.ciaoshen.howtomcatworks.ex01"
+
+#######################################
+#	Test HttpSniffer.java
+#######################################
+# Active Apache Server
+# sudo apachectl start
+# Call HttpSniffer
+# java -cp ../../.. com.brainysoftware.pyrmont.util.HttpSniffer
+
+
+#######################################
+#	Test HttpServerConnector.java
+#######################################
+NAME="HttpServerConnector"
+FILE="${NAME}.java"
+
+#javac -d ${CLASS_DIR} -cp ${CLASS_DIR} -sourcepath ${SRC_DIR} "${SRC_DIR}/${PACK}/${FILE}"
+#java -cp ${CLASS_DIR} "${CLASS_PREFIX}.${NAME}"
+
+#######################################
+#	Test SomeTests.java
+#######################################
+NAME="SomeTests"
+FILE="${NAME}.java"
+
+#javac -d ${CLASS_DIR} -cp ${CLASS_DIR} -sourcepath ${SRC_DIR} "${SRC_DIR}/${PACK}/${FILE}"
+#java -cp ${CLASS_DIR} "${CLASS_PREFIX}.${NAME}"
+
+
+#######################################
+#	Test: 
+#		HttpServer.java
+#		Request.java
+#		Response.java
+#######################################
+NAME="HttpServer"
+FILE="${NAME}.java"
+
+javac -d ${CLASS_DIR} -cp ${CLASS_DIR} -sourcepath ${SRC_DIR} "${SRC_DIR}/${PACK}/${FILE}"
+java -cp ${CLASS_DIR} "${CLASS_PREFIX}.${NAME}"
+
+

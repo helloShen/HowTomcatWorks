@@ -1,0 +1,35 @@
+#!/bin/zsh
+#############################################################
+###
+### How Tomcat Works - Chapter 2
+### Use this Script to run each exercise in Chapter 2
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# dir
+ROOT="/Users/Wei/github/HowTomcatWorks/"
+MAIN_DIR="${ROOT}/solutions"
+CLASS_DIR="${MAIN_DIR}/bin/"
+SRC_DIR="${MAIN_DIR}/src"
+SCRIP_DIR="${MAIN_DIR}/sh"
+# path
+PACK="com/ciaoshen/howtomcatworks/ex02"
+CLASS_PREFIX="com.ciaoshen.howtomcatworks.ex02"
+# lib
+SERVLET="${ROOT}/lib/servlet.jar"
+
+
+#######################################
+#      HttpServer1.java
+#######################################
+
+MAIN_ACCESS="HttpServer1"
+MAIN_ACCESS_FILE="${MAIN_ACCESS}.java"
+
+SERVLET_NAME="KingOfGloryServlet"
+SERVLET_FILE="${SERVLET_NAME}.java"
+
+javac -Xlint -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${SERVLET}" "${SRC_DIR}/${PACK}/${SERVLET_FILE}" "${SRC_DIR}/${PACK}/${MAIN_ACCESS_FILE}"
+
+java -cp "${CLASS_DIR}:${SERVLET}" "${CLASS_PREFIX}.${MAIN_ACCESS}"

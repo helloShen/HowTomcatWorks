@@ -1,3 +1,5 @@
+package com.ciaoshen.howtomcatworks.ex03.webroot;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
@@ -15,6 +17,7 @@ public class ModernServlet extends HttpServlet {
 
     response.setContentType("text/html");
     PrintWriter out = response.getWriter();
+    out.println("HTTP/1.1 200 OK\r\n\r\n");
     out.println("<html>");
     out.println("<head>");
     out.println("<title>Modern Servlet</title>");

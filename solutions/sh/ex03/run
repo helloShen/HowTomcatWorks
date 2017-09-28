@@ -1,0 +1,40 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 3
+### Use this Script to run each exercise in Chapter 3
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex03"
+CONN="${SRC_DIR}/${PACK}/connector"
+HTTP="${CONN}/http"
+WEB="${SRC_DIR}/${PACK}/webroot"
+BOOT="${SRC_DIR}/${PACK}/startup"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex03"
+PRE_CONN="${PRE}.connector"
+PRE_HTTP="${PRE_CONN}.http"
+PRE_WEB="${PRE}.web"
+PRE_BOOT="${PRE}.startup"
+
+# lib
+SERVLET="${ROOT}/lib/servlet.jar"
+
+
+#######################################
+#     Run ModernServlet of Chapter 3
+#######################################
+javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${BOOT}/Bootstrap.java" "${HTTP}/Constants.java" "${HTTP}/HttpConnector.java" "${HTTP}/HttpHeader.java" "${HTTP}/HttpProcessor.java" "${HTTP}/HttpRequest.java" "${HTTP}/HttpRequestFacade.java" "${HTTP}/HttpRequestLine.java" "${HTTP}/HttpResponse.java" "${HTTP}/HttpResponseFacade.java" "${HTTP}/SocketInputStream.java" "${CONN}/RequestStream.java" "${CONN}/ResponseStream.java" "${CONN}/ResponseWriter.java" "${SRC_DIR}/${PACK}/ServletProcessor.java" "${SRC_DIR}/${PACK}/StaticResourceProcessor.java" "${WEB}/ModernServlet.java" "${WEB}/PrimitiveServlet.java" 
+
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap"
