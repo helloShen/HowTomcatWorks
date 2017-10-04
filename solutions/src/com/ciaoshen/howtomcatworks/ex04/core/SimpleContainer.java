@@ -1,4 +1,4 @@
-package ex04.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex04.core;
 
 import java.beans.PropertyChangeListener;
 import java.net.URL;
@@ -25,8 +25,37 @@ import org.apache.catalina.Response;
 
 public class SimpleContainer implements Container {
 
+  /**
+   * 不要使用下面这个路径，因为user.dir拿到的是.sh文件运行程序时的路径。
+   * 但如果用这个路径，程序照样能够运行，因为URLClassLoader会拿到运行时的classpath信息，
+   * 所以还是能找到目标ModernServlet.class文件。
+   *
+   * 但还是不要用下面这个路径。
+   */
+  /*
   public static final String WEB_ROOT =
     System.getProperty("user.dir") + File.separator  + "webroot";
+   */
+
+  /**
+   * 下面这个路径是正确的
+   */
+  public static final String ROOT =
+     System.getProperty("user.home") +
+     File.separator + "github" +
+     File.separator + "HowTomcatWorks" +
+     File.separator + "solutions";
+  public static final String CP =
+     ROOT +
+     File.separator + "bin" +
+     File.separator + "com" +
+     File.separator + "ciaoshen" +
+     File.separator + "howtomcatworks";
+
+  public static final String WEB_ROOT =
+     CP +
+     File.separator + "ex04" +
+     File.separator + "webroot";
 
   public SimpleContainer() {
   }

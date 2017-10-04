@@ -35,6 +35,11 @@ public class HttpConnector implements Runnable {
       }
       // Hand this socket off to an HttpProcessor
       HttpProcessor processor = new HttpProcessor(this);
+      /**
+       * 非异步。
+       * 必须等待当前HttpProcessor的process()方法处理完消息后返回才能处理下一个请求
+       * 到第四章，有了HttpProcessor对象池，每个HttpProcessor也有自己的独立线程以后，这个过程会是异步的。
+       */
       processor.process(socket);
     }
   }

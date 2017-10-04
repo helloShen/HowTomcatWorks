@@ -1,0 +1,54 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 4
+### Use this Script to run each exercise in Chapter 4
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex04"
+BOOT="${SRC_DIR}/${PACK}/startup"
+CORE="${SRC_DIR}/${PACK}/core"
+CON="${SRC_DIR}/${PACK}/concurrency"
+WEB="${SRC_DIR}/${PACK}/webroot"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex04"
+PRE_BOOT="${PRE}.startup"
+PRE_CORE="${PRE}.core"
+PRE_CON="${PRE}.concurrency"
+PRE_WEB="${PRE}.webroot"
+
+# lib
+SERVLET="${ROOT}/lib/servlet.jar"
+
+
+#######################################################
+#     EvenGenerator and EvenChecker of Chapter 4
+#######################################################
+#javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CON}/EvenChecker.java" "${CON}/EvenGenerator.java" "${CON}/RaceCondition.java"
+
+#java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_CON}.RaceCondition"
+
+#######################################################
+#     Producer & Consumer of Chapter 4
+#######################################################
+#javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CON}/Chef.java" "${CON}/Waiter.java" "${CON}/Resturant.java"
+
+#java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_CON}.Resturant"
+
+###########################################################
+#    Run org.apache.catalina.connector.http.HttpConnector
+###########################################################
+javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContainer.java" "${BOOT}/Bootstrap.java" "${WEB}/ModernServlet.java" "${WEB}/PrimitiveServlet.java"
+
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap"
