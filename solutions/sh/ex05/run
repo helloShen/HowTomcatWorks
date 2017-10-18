@@ -1,0 +1,50 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 5
+### Use this Script to run each exercise in Chapter 5
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex05"
+BOOT="${SRC_DIR}/${PACK}/startup"
+CORE="${SRC_DIR}/${PACK}/core"
+VALVES="${SRC_DIR}/${PACK}/valves"
+WEB="${SRC_DIR}/${PACK}/webroot"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex05"
+PRE_BOOT="${PRE}.startup"
+PRE_CORE="${PRE}.core"
+PRE_VALVES="${PRE}.valves"
+PRE_WEB="${PRE}.webroot"
+
+# lib
+SERVLET="${ROOT}/lib/servlet.jar"
+
+
+
+##############################################################
+# Run com.ciaoshen.howtomcatworks.ex05.startup.Bootstrap1.java
+##############################################################
+#javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContext.java" "${CORE}/SimpleContextMapper.java" "${CORE}/SimpleContextValve.java" "${CORE}/SimpleLoader.java" "${CORE}/SimplePipeline.java" "${CORE}/SimpleWrapper.java" "${CORE}/SimpleWrapperValve.java" "${VALVES}/ClientIPLoggerValve.java" "${VALVES}/HeaderLoggerValve.java" "${BOOT}/Bootstrap1.java"
+
+#java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap1"
+
+
+
+##############################################################
+# Run com.ciaoshen.howtomcatworks.ex05.startup.Bootstrap2.java
+##############################################################
+javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContext.java" "${CORE}/SimpleContextMapper.java" "${CORE}/SimpleContextValve.java" "${CORE}/SimpleLoader.java" "${CORE}/SimplePipeline.java" "${CORE}/SimpleWrapper.java" "${CORE}/SimpleWrapperValve.java" "${VALVES}/ClientIPLoggerValve.java" "${VALVES}/HeaderLoggerValve.java" "${WEB}/PrimitiveServlet.java" "${WEB}/ModernServlet.java" "${BOOT}/Bootstrap2.java"
+
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap2"

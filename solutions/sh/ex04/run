@@ -46,9 +46,18 @@ SERVLET="${ROOT}/lib/servlet.jar"
 
 #java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_CON}.Resturant"
 
+#######################################################
+#     NonVisibility of Chapter 4
+#######################################################
+javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CON}/NonVisibility.java" 
+
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_CON}.NonVisibility"
+
+
+
 ###########################################################
 #    Run org.apache.catalina.connector.http.HttpConnector
 ###########################################################
-javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContainer.java" "${BOOT}/Bootstrap.java" "${WEB}/ModernServlet.java" "${WEB}/PrimitiveServlet.java"
+#javac -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContainer.java" "${BOOT}/Bootstrap.java" "${WEB}/ModernServlet.java" "${WEB}/PrimitiveServlet.java"
 
-java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap"
+#java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${PRE_BOOT}.Bootstrap"

@@ -1,4 +1,4 @@
-package com.ciaoshen.howtomcatworks.ex04.webroot;
+package com.ciaoshen.howtomcatworks.ex05.webroot;
 
 import javax.servlet.*;
 import java.io.IOException;
