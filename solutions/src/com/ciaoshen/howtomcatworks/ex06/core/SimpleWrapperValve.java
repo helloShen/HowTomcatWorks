@@ -1,4 +1,4 @@
-package ex06.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex06.core;
 
 import java.io.IOException;
 import javax.servlet.Servlet;

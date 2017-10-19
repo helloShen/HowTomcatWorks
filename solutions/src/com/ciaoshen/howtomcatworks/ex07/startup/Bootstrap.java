@@ -1,15 +1,16 @@
-package com.ciaoshen.howtomcatworks.ex06.startup;
+package ex07.pyrmont.startup;
 
-import com.ciaoshen.howtomcatworks.ex06.core.SimpleContext;
-import com.ciaoshen.howtomcatworks.ex06.core.SimpleContextLifecycleListener;
-import com.ciaoshen.howtomcatworks.ex06.core.SimpleContextMapper;
-import com.ciaoshen.howtomcatworks.ex06.core.SimpleLoader;
-import com.ciaoshen.howtomcatworks.ex06.core.SimpleWrapper;
+import ex07.pyrmont.core.SimpleContext;
+import ex07.pyrmont.core.SimpleContextLifecycleListener;
+import ex07.pyrmont.core.SimpleContextMapper;
+import ex07.pyrmont.core.SimpleLoader;
+import ex07.pyrmont.core.SimpleWrapper;
 import org.apache.catalina.Connector;
 import org.apache.catalina.Context;
 import org.apache.catalina.Lifecycle;
 import org.apache.catalina.LifecycleListener;
 import org.apache.catalina.Loader;
+import org.apache.catalina.logger.FileLogger;
 import org.apache.catalina.Mapper;
 import org.apache.catalina.Wrapper;
 import org.apache.catalina.connector.http.HttpConnector;
@@ -23,6 +24,7 @@ public final class Bootstrap {
     Wrapper wrapper2 = new SimpleWrapper();
     wrapper2.setName("Modern");
     wrapper2.setServletClass("ModernServlet");
+    Loader loader = new SimpleLoader();
 
     Context context = new SimpleContext();
     context.addChild(wrapper1);
@@ -33,11 +35,22 @@ public final class Bootstrap {
     LifecycleListener listener = new SimpleContextLifecycleListener();
     ((Lifecycle) context).addLifecycleListener(listener);
     context.addMapper(mapper);
-    Loader loader = new SimpleLoader();
     context.setLoader(loader);
     // context.addServletMapping(pattern, name);
     context.addServletMapping("/Primitive", "Primitive");
     context.addServletMapping("/Modern", "Modern");
+
+    // ------ add logger --------
+    System.setProperty("catalina.base", System.getProperty("user.dir"));
+    FileLogger logger = new FileLogger();
+    logger.setPrefix("FileLog_");
+    logger.setSuffix(".txt");
+    logger.setTimestamp(true);
+    logger.setDirectory("webroot");
+    context.setLogger(logger);
+
+    //---------------------------
+
     connector.setContainer(context);
     try {
       connector.initialize();

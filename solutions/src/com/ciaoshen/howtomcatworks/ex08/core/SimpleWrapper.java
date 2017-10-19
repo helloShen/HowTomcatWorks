@@ -1,4 +1,7 @@
-package com.ciaoshen.howtomcatworks.ex06.core;
+/*
+ * copied from ex07.pyrmont.core.SimpleWrapper
+ */
+package ex08.pyrmont.core;
 
 import java.beans.PropertyChangeListener;
 import java.io.IOException;

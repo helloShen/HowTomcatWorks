@@ -1,5 +1,11 @@
-package com.ciaoshen.howtomcatworks.ex06.core;
 
+// difference from ex06.pyrmont.core.SimpleContext is that
+// this one defines the private method log, which is called
+// from different places.
+package ex07.pyrmont.core;
+
+import ex07.pyrmont.core.SimpleContextValve;
+import ex07.pyrmont.core.SimplePipeline;
 
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
@@ -48,6 +54,7 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
 
   protected HashMap children = new HashMap();
   private Loader loader = null;
+  private Logger logger = null;
   protected LifecycleSupport lifecycle = new LifecycleSupport(this);
   private SimplePipeline pipeline = new SimplePipeline(this);
   private HashMap servletMappings = new HashMap();
@@ -505,10 +512,11 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
   }
 
   public Logger getLogger() {
-    return null;
+    return logger;
   }
 
   public void setLogger(Logger logger) {
+    this.logger = logger;
   }
 
   public Manager getManager() {
@@ -687,6 +695,7 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
   }
 
   public synchronized void start() throws LifecycleException {
+    log("starting Context");
     if (started)
       throw new LifecycleException("SimpleContext has already started");
 
@@ -718,9 +727,11 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
 
     // Notify our interested LifecycleListeners
     lifecycle.fireLifecycleEvent(AFTER_START_EVENT, null);
+    log("Context started");
   }
 
   public void stop() throws LifecycleException {
+    log("stopping Context");
     if (!started)
       throw new LifecycleException("SimpleContext has not been started");
     // Notify our interested LifecycleListeners
@@ -748,6 +759,12 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
     }
     // Notify our interested LifecycleListeners
     lifecycle.fireLifecycleEvent(AFTER_STOP_EVENT, null);
+    log("Context stopped");
   }
 
+  private void log(String message) {
+    Logger logger = this.getLogger();
+    if (logger!=null)
+      logger.log(message);
+  }
 }
