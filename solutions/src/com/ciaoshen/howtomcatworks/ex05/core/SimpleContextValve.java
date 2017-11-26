@@ -30,17 +30,18 @@ public class SimpleContextValve implements Valve, Contained {
     // Disallow any direct access to resources under WEB-INF or META-INF
     HttpServletRequest hreq = (HttpServletRequest) request.getRequest();
     String contextPath = hreq.getContextPath();
+    System.out.println("Context Path is: " + contextPath);
     String requestURI = ((HttpRequest) request).getDecodedRequestURI();
-    String relativeURI =
-      requestURI.substring(contextPath.length()).toUpperCase();
+    System.out.println("Request URI is: " + requestURI);
+    String relativeURI = requestURI.substring(contextPath.length()).toUpperCase();
+    System.out.println("Relative URI is: " + relativeURI);
 
     Context context = (Context) getContainer();
     // Select the Wrapper to be used for this Request
     Wrapper wrapper = null;
     try {
       wrapper = (Wrapper) context.map(request, true);
-    }
-    catch (IllegalArgumentException e) {
+    } catch (IllegalArgumentException e) {
       badRequest(requestURI, (HttpServletResponse) response.getResponse());
       return;
     }

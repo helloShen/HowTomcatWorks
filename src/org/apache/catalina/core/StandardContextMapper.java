@@ -189,11 +189,14 @@ public final class StandardContextMapper
             return (request.getWrapper());
 
         // Identify the context-relative URI to be mapped
-        String contextPath =
-            ((HttpServletRequest) request.getRequest()).getContextPath();
+        String contextPath = ((HttpServletRequest) request.getRequest()).getContextPath();
         String requestURI = ((HttpRequest) request).getDecodedRequestURI();
         String relativeURI = requestURI.substring(contextPath.length());
 
+        /** 我加的代码，看清楚路径具体是什么 */
+        System.out.println("contextPath = " + contextPath);
+        System.out.println("requestURI = " + requestURI);
+        System.out.println("relativeURI = " + relativeURI);
 
         if (debug >= 1)
             context.log("Mapping contextPath='" + contextPath +
@@ -203,6 +206,10 @@ public final class StandardContextMapper
         // Apply the standard request URI mapping rules from the specification
         Wrapper wrapper = null;
         String servletPath = relativeURI;
+
+        /** 我加的代码，看清楚路径具体是什么 */
+        System.out.println("servletPath = " + servletPath);
+
         String pathInfo = null;
         String name = null;
 
@@ -212,6 +219,10 @@ public final class StandardContextMapper
                 context.log("  Trying exact match");
             if (!(relativeURI.equals("/")))
                 name = context.findServletMapping(relativeURI);
+
+                /** 我加的代码，看清楚路径具体是什么 */
+                System.out.println("Find Exaxt Match Name: " + name);
+
             if (name != null)
                 wrapper = (Wrapper) context.findChild(name);
             if (wrapper != null) {
@@ -227,6 +238,10 @@ public final class StandardContextMapper
             servletPath = relativeURI;
             while (true) {
                 name = context.findServletMapping(servletPath + "/*");
+
+                /** 我加的代码，看清楚路径具体是什么 */
+                System.out.println("Find Prifix Match Name: " + name);
+
                 if (name != null)
                     wrapper = (Wrapper) context.findChild(name);
                 if (wrapper != null) {
@@ -253,6 +268,11 @@ public final class StandardContextMapper
                 if (period >= 0) {
                     String pattern = "*" + last.substring(period);
                     name = context.findServletMapping(pattern);
+
+                    /** 我加的代码，看清楚路径具体是什么 */
+                    System.out.println("Extension pattern = " + pattern);
+                    System.out.println("Find Extension Match Name: " + name);
+
                     if (name != null)
                         wrapper = (Wrapper) context.findChild(name);
                     if (wrapper != null) {
@@ -268,6 +288,11 @@ public final class StandardContextMapper
             if (debug >= 2)
                 context.log("  Trying default match");
             name = context.findServletMapping("/");
+
+            /** 我加的代码，看清楚路径具体是什么 */
+            System.out.println("Default Match pattern = /");
+            System.out.println("Find Default Match Name: " + name);
+
             if (name != null)
                 wrapper = (Wrapper) context.findChild(name);
             if (wrapper != null) {
@@ -286,6 +311,10 @@ public final class StandardContextMapper
             request.setWrapper(wrapper);
             ((HttpRequest) request).setServletPath(servletPath);
             ((HttpRequest) request).setPathInfo(pathInfo);
+
+            /** 我加的代码，看清楚路径具体是什么 */
+            System.out.println("Final servletPath = " + servletPath);
+            System.out.println("Final pathInfo = " + pathInfo);
         }
         return (wrapper);
 

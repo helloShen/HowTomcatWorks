@@ -19,10 +19,12 @@ public final class Bootstrap {
     Connector connector = new HttpConnector();
     Wrapper wrapper1 = new SimpleWrapper();
     wrapper1.setName("Primitive");
-    wrapper1.setServletClass("PrimitiveServlet");
+    // 类名必须带上完整的包路径
+    wrapper1.setServletClass("com.ciaoshen.howtomcatworks.ex06.webroot.PrimitiveServlet");
     Wrapper wrapper2 = new SimpleWrapper();
     wrapper2.setName("Modern");
-    wrapper2.setServletClass("ModernServlet");
+    // 类名必须带上完整的包路径
+    wrapper2.setServletClass("com.ciaoshen.howtomcatworks.ex06.webroot.ModernServlet");
 
     Context context = new SimpleContext();
     context.addChild(wrapper1);

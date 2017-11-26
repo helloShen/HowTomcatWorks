@@ -72,6 +72,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.Stack;
+
+// 我加的
+import java.util.Map;
+
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -3534,6 +3538,19 @@ public class StandardContext
         // Notify our interested LifecycleListeners
         lifecycle.fireLifecycleEvent(AFTER_START_EVENT, null);
 
+        /** 我加的显示内部参数的代码 */
+        System.out.println("docBase = " + docBase);
+        System.out.println("mapperClass = " + mapperClass);
+        Iterator paraIte = parameters.entrySet().iterator();
+        while (paraIte.hasNext()) {
+            Map.Entry entry = (Map.Entry)paraIte.next();
+            System.out.println("parameter = [" + entry.getKey() + "," + entry.getValue() + "]");
+        }
+        System.out.println("workDir = " + workDir);
+        for (int i = 0; i < filterMaps.length; i++) {
+            FilterMap filter = filterMaps[i];
+            System.out.println("filter: [filterName=" + filter.getFilterName() + ", servletName="+ filter.getServletName() + "]");
+        }
     }
 
 

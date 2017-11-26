@@ -2,7 +2,7 @@
 // difference from ex06.pyrmont.core.SimpleContext is that
 // this one defines the private method log, which is called
 // from different places.
-package ex07.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex07.core;
 
 import ex07.pyrmont.core.SimpleContextValve;
 import ex07.pyrmont.core.SimplePipeline;

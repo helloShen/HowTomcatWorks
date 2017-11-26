@@ -1,4 +1,4 @@
-package ex07.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex07.core;
 
 import java.beans.PropertyChangeListener;
 import java.io.IOException;

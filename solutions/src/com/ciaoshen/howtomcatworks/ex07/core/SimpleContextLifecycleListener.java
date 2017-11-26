@@ -1,4 +1,4 @@
-package ex07.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex07.core;
 
 import org.apache.catalina.Lifecycle;
 import org.apache.catalina.LifecycleEvent;

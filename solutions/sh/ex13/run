@@ -1,0 +1,66 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 13 
+### Use this Script to run each exercise in Chapter 13
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+WEB_APPS="${ROOT}/webapps/app12/WEB-INF/classes/"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex13"
+BOOT="${SRC_DIR}/${PACK}/startup"
+CORE="${SRC_DIR}/${PACK}/core"
+WEB="${SRC_DIR}/${PACK}/webroot"
+REALM="${SRC_DIR}/${PACK}/realm"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex13"
+PRE_BOOT="${PRE}.startup"
+PRE_CORE="${PRE}.core"
+PRE_WEB="${PRE}.webroot"
+
+# lib
+LIB="${ROOT}/lib"
+SERVLET="${LIB}/servlet.jar"
+COMMON="${LIB}/commons-collections.jar"
+COMMON_DIGESTER="${LIB}/commons-digester.jar"
+COMMON_LOG="${LIB}/commons-logging.jar"
+TOMCAT_UTIL="${LIB}/tomcat-util.jar"
+
+
+
+### 编译共享Servlet程序
+javac -source 1.4 -d ${WEB_APPS} -cp "${CLASS_DIR}:${SERVLET}" "${WEB}/PrimitiveServlet.java" "${WEB}/ModernServlet.java"
+
+############################################################ 
+### 12章已经完成。这章目前为止不需要修改StandardContext
+### >>> 编译新的org.apache.catalina.StandardContext <<<
+### 为了看清StandardContext中几个重要属性的实际值
+############################################################ 
+#CATA_SRC="${ROOT}/src/"
+#CATA_CLASS="${ROOT}"
+
+### 重新编译StandardContext.java
+#javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${TOMCAT_UTIL}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/core/StandardContext.java"
+
+### 编译Bootstrap1.java
+#javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON_DIGESTER}:${COMMON}" "${CORE}/SimpleContextConfig.java" "${BOOT}/Bootstrap1.java"
+
+### 运行Bootstrap1.class
+#java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON}:${COMMON_DIGESTER}" "${PRE_BOOT}.Bootstrap1"
+
+
+### 编译Bootstrap2.java
+javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON}:${COMMON_DIGESTER}" "${CORE}/SimpleContextConfig.java" "${BOOT}/Bootstrap2.java"
+
+### 运行Bootstrap2.class
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON}:${COMMON_DIGESTER}" "${PRE_BOOT}.Bootstrap2"

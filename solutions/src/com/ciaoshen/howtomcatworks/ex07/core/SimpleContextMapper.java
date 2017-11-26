@@ -1,4 +1,4 @@
-package ex07.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex07.core;
 
 import javax.servlet.http.HttpServletRequest;
 import org.apache.catalina.Container;

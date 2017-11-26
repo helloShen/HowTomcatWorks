@@ -493,10 +493,14 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
   }
 
   public Loader getLoader() {
-    if (loader != null)
+    if (loader != null) {
+      System.out.println(this.getClass().getName() + " use its own Loader " + loader);
       return (loader);
-    if (parent != null)
+    }
+    if (parent != null) {
+      System.out.println(this.getClass().getName() + " use its parent Loader " + parent.getLoader());
       return (parent.getLoader());
+    }
     return (null);
   }
 

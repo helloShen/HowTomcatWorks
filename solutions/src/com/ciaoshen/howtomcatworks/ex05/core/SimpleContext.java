@@ -40,12 +40,18 @@ public class SimpleContext implements Context, Pipeline {
   public SimpleContext() {
     pipeline.setBasic(new SimpleContextValve());
   }
-
+  // 存放Servlet Name到Servlet程序的映射。
+  // 比如拿到"Primitive"这个名字，
+  // 找到叫这个名字的"com.ciaoshen.howtomcatworks.ex05.webroot.PrimitiveServlet"的类文件
   protected HashMap children = new HashMap();
   protected Loader loader = null;
   protected SimplePipeline pipeline = new SimplePipeline(this);
+  // 存放URI最后指定servlet的部分，和Servlet Name之间的映射
+  // 比如["/Primitive","Primitive"]
+  // 从"127.0.0.1:8080/Primitive"切下"/Primitive"，映射到叫"Primitive"的Servlet程序
   protected HashMap servletMappings = new HashMap();
   protected Mapper mapper = null;
+  // 映射多个Mapper。每个Mapper对应一种协议。
   protected HashMap mappers = new HashMap();
   private Container parent = null;
 
@@ -566,6 +572,7 @@ public class SimpleContext implements Context, Pipeline {
     // the first mapper added becomes the default mapper
     mapper.setContainer((Container) this);      // May throw IAE
     this.mapper = mapper;
+    // 每个Context都有自己独立的线程，但Mapper可以多个容器共享。所以Mapper是竞态资源，Context不是。
     synchronized(mappers) {
       if (mappers.get(mapper.getProtocol()) != null)
         throw new IllegalArgumentException("addMapper:  Protocol '" +

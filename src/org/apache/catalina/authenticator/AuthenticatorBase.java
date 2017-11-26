@@ -475,7 +475,7 @@ public abstract class AuthenticatorBase
         // Make sure that constrained resources are not cached by web proxies
         // or browsers as caching can provide a security hole
         if (!(((HttpServletRequest) hrequest.getRequest()).isSecure())) {
-            HttpServletResponse sresponse = 
+            HttpServletResponse sresponse =
                 (HttpServletResponse) response.getResponse();
             sresponse.setHeader("Pragma", "No-cache");
             sresponse.setHeader("Cache-Control", "no-cache");
@@ -1024,7 +1024,7 @@ public abstract class AuthenticatorBase
 
 
     /**
-     * Get the lifecycle listeners associated with this lifecycle. If this 
+     * Get the lifecycle listeners associated with this lifecycle. If this
      * Lifecycle has no listeners registered, a zero-length array is returned.
      */
     public LifecycleListener[] findLifecycleListeners() {

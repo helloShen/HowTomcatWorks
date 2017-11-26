@@ -1,4 +1,4 @@
-package ex08.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex08.core;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.Lifecycle;

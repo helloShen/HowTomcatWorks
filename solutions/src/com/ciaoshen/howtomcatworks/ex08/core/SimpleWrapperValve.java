@@ -1,7 +1,4 @@
-/**
- * copied from ex07.pyrmont.core.SimpleWrapperValve
- */
-package ex08.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex08.core;
 
 import java.io.IOException;
 import javax.servlet.Servlet;
@@ -39,6 +36,7 @@ public class SimpleWrapperValve implements Valve, Contained {
     // Allocate a servlet instance to process this request
     try {
       servlet = wrapper.allocate();
+      System.out.println("Servlet " + servlet.getClass().getName() + ", loaded by: " + servlet.getClass().getClassLoader());
       if (hres!=null && hreq!=null) {
         servlet.service(hreq, hres);
       }

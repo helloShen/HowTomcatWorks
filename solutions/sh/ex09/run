@@ -1,0 +1,45 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 9
+### Use this Script to run each exercise in Chapter 9
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+WEB_APPS="${ROOT}/webapps/app1/WEB-INF/classes/"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex09"
+BOOT="${SRC_DIR}/${PACK}/startup"
+CORE="${SRC_DIR}/${PACK}/core"
+WEB="${SRC_DIR}/${PACK}/webroot"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex09"
+PRE_BOOT="${PRE}.startup"
+PRE_CORE="${PRE}.core"
+PRE_WEB="${PRE}.webroot"
+
+# lib
+SERVLET="${ROOT}/lib/servlet.jar"
+COMMON="${ROOT}/lib/commons-collections.jar"
+
+
+##############################################################
+# Run TOMCAT-HOME/solutions/src/com/ciaoshen/howtomcatworks/ex09/Bootstrap.java
+##############################################################
+### 编译Servlet程序
+javac -source 1.4 -d ${WEB_APPS} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${SERVLET}" "${WEB}/SessionServlet.java"
+
+### 编译Bootstrap.java
+javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}" "${CORE}/SimpleContextConfig.java" "${CORE}/SimplePipeline.java" "${CORE}/SimpleWrapper.java" "${CORE}/SimpleWrapperValve.java" "${BOOT}/Bootstrap.java"
+
+### 运行Bootstrap.class
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON}" "${PRE_BOOT}.Bootstrap"

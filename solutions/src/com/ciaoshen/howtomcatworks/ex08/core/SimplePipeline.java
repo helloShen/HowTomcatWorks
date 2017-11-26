@@ -1,7 +1,4 @@
-/**
- * copied from ex07.pyrmont.core.SimplePipeline
- */
-package ex08.pyrmont.core;
+package com.ciaoshen.howtomcatworks.ex08.core;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

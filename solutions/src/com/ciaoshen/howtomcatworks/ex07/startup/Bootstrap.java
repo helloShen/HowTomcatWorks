@@ -1,10 +1,10 @@
-package ex07.pyrmont.startup;
+package com.ciaoshen.howtomcatworks.ex07.startup;
 
-import ex07.pyrmont.core.SimpleContext;
-import ex07.pyrmont.core.SimpleContextLifecycleListener;
-import ex07.pyrmont.core.SimpleContextMapper;
-import ex07.pyrmont.core.SimpleLoader;
-import ex07.pyrmont.core.SimpleWrapper;
+import com.ciaoshen.howtomcatworks.ex07.core.SimpleContext;
+import com.ciaoshen.howtomcatworks.ex07.core.SimpleContextLifecycleListener;
+import com.ciaoshen.howtomcatworks.ex07.core.SimpleContextMapper;
+import com.ciaoshen.howtomcatworks.ex07.core.SimpleLoader;
+import com.ciaoshen.howtomcatworks.ex07.core.SimpleWrapper;
 import org.apache.catalina.Connector;
 import org.apache.catalina.Context;
 import org.apache.catalina.Lifecycle;
@@ -20,10 +20,12 @@ public final class Bootstrap {
     Connector connector = new HttpConnector();
     Wrapper wrapper1 = new SimpleWrapper();
     wrapper1.setName("Primitive");
-    wrapper1.setServletClass("PrimitiveServlet");
+    // 必须用类的全具名
+    wrapper1.setServletClass("com.ciaoshen.howtomcatworks.ex07.webroot.PrimitiveServlet");
     Wrapper wrapper2 = new SimpleWrapper();
     wrapper2.setName("Modern");
-    wrapper2.setServletClass("ModernServlet");
+    // 必须用类的全具名
+    wrapper2.setServletClass("com.ciaoshen.howtomcatworks.ex07.webroot.ModernServlet");
     Loader loader = new SimpleLoader();
 
     Context context = new SimpleContext();

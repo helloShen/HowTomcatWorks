@@ -78,15 +78,27 @@ public class SimpleWrapper implements Wrapper, Pipeline, Lifecycle {
       throw new ServletException("No loader.");
     }
     ClassLoader classLoader = loader.getClassLoader();
+    System.out.println("ClassLoader is " + classLoader);
 
     // Load the specified servlet class from the appropriate class loader
     Class classClass = null;
     try {
       if (classLoader!=null) {
+        System.out.println("Target Class is " + actualClass);
         classClass = classLoader.loadClass(actualClass);
+        System.out.println("classClass loaded!");
+        if (classClass == null) {
+            System.out.println(actualClass + " not found!");
+        } else {
+            System.out.println(actualClass + " found!");
+            System.out.println("Class [" + classClass.getName() + "] loaded!");
+            System.out.println("ClassLoader is " + classClass.getClassLoader());
+            System.out.println("ClassLoader is System Loader? " + (classClass.getClassLoader() == classClass.getClassLoader().getSystemClassLoader()));
+        }
+      } else {
+        System.out.println("ClassLoader is null!");
       }
-    }
-    catch (ClassNotFoundException e) {
+    } catch (ClassNotFoundException e) {
       throw new ServletException("Servlet class not found");
     }
     // Instantiate and initialize an instance of the servlet class itself
@@ -112,10 +124,14 @@ public class SimpleWrapper implements Wrapper, Pipeline, Lifecycle {
   }
 
   public Loader getLoader() {
-    if (loader != null)
+    if (loader != null) {
+      System.out.println("SimpleWrapper use its own loader.");
       return (loader);
-    if (parent != null)
+    }
+    if (parent != null) {
+      System.out.println(this.getClass().getName() + " looking for parent context loader " + parent.getLoader());
       return (parent.getLoader());
+    }
     return (null);
   }
 

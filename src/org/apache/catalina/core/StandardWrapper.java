@@ -89,6 +89,9 @@ import org.apache.catalina.util.Enumerator;
 import org.apache.catalina.util.InstanceSupport;
 import org.apache.tomcat.util.log.SystemLogHandler;
 
+import java.net.URL;
+import org.apache.catalina.loader.WebappClassLoader;
+
 
 /**
  * Standard implementation of the <b>Wrapper</b> interface that represents
@@ -810,23 +813,56 @@ public final class StandardWrapper
      * at least one initialized instance.  This can be used, for example, to
      * load servlets that are marked in the deployment descriptor to be loaded
      * at server startup time.
+     *
+     * 函数中多数的System.out.println()是我加的，为了排查bug。
      */
     public synchronized Servlet loadServlet() throws ServletException {
+
+        // 检查代码
+        // System.out.println("Hello! I am loadServlet() from new StandardWrapper class!");
 
         // Nothing to do if we already have an instance or an instance pool
         if (!singleThreadModel && (instance != null))
             return instance;
 
+        // 检查代码
+        // System.out.println("We use instance pool or we need to create the singleton!");
+
+
         PrintStream out = System.out;
-        SystemLogHandler.startCapture();
+
+        // 检查代码
+        // System.out.println("PrintStream is OK!");
+
+        /*****************************************************************
+         * ！！！ 问题就出在这里 ！！！
+         * 把下面这行SystemLogHandler注释掉（以及后面对应的stopCapture()函数）
+         * 就运行正常。
+         *****************************************************************/
+        // SystemLogHandler.startCapture();
+
+        // 检查代码
+        // System.out.println("SystemLogHandler is OK!");
+
         Servlet servlet = null;
+
+        // 检查代码
+        // System.out.println("Servlet is OK and it's null now!");
+
         try {
+
+            // System.out.println("I am in first try{} block!");
+
             // If this "servlet" is really a JSP file, get the right class.
             // HOLD YOUR NOSE - this is a kludge that avoids having to do special
             // case Catalina-specific code in Jasper - it also requires that the
             // servlet path be replaced by the <jsp-file> element content in
             // order to be completely effective
             String actualClass = servletClass;
+
+            // 检查代码
+            // System.out.println("actualClass = " + actualClass);
+
             if ((actualClass == null) && (jspFile != null)) {
                 Wrapper jspWrapper = (Wrapper)
                     ((Context) getParent()).findChild(Constants.JSP_SERVLET_NAME);
@@ -836,6 +872,10 @@ public final class StandardWrapper
 
             // Complain if no servlet class has been specified
             if (actualClass == null) {
+
+                // 检查代码
+                // System.out.println("!!!ERROR!!!: actualClass is null!");
+
                 unavailable(null);
                 throw new ServletException
                     (sm.getString("standardWrapper.notClass", getName()));
@@ -843,13 +883,37 @@ public final class StandardWrapper
 
             // Acquire an instance of the class loader to be used
             Loader loader = getLoader();
+
+            // 检查代码
+            // System.out.println("Loader = " + loader.getInfo());
+
             if (loader == null) {
+
+                // System.out.println("!!!ERROR!!!: Loader is null!");
+
                 unavailable(null);
                 throw new ServletException
                     (sm.getString("standardWrapper.missingLoader", getName()));
             }
 
             ClassLoader classLoader = loader.getClassLoader();
+
+            /** 检查代码
+            if (classLoader == null) {
+
+                System.out.println("!!!ERROR!!!: ClassLoader is null!");
+
+            } else {
+
+                System.out.println("ClassLoader is not null!");
+
+                URL[] urls = ((WebappClassLoader)classLoader).getURLs();
+                for (int i = 0; i < urls.length; i++) {
+                    System.out.println("url of class loader: " + urls[i].getPath());
+                }
+            }
+            */
+
 
             // Special case class loader for a container provided servlet
             if (isContainerProvidedServlet(actualClass)) {
@@ -875,6 +939,9 @@ public final class StandardWrapper
                      e);
             }
             if (classClass == null) {
+
+                System.out.println("!!!ERROR!!!: Didn't load the class file!");
+
                 unavailable(null);
                 throw new ServletException
                     (sm.getString("standardWrapper.missingClass", actualClass));
@@ -882,6 +949,10 @@ public final class StandardWrapper
 
             // Instantiate and initialize an instance of the servlet class itself
             try {
+
+                // 检查代码
+                // System.out.println("Class file loaded: " + classClass.getName());
+
                 servlet = (Servlet) classClass.newInstance();
             } catch (ClassCastException e) {
                 unavailable(null);
@@ -895,6 +966,15 @@ public final class StandardWrapper
                     (sm.getString("standardWrapper.instantiate", actualClass), e);
             }
 
+
+            /** 检查代码
+            if (servlet == null) {
+                System.out.println("!!!ERROR!!!: Servlet instance not initialized!");
+            } else {
+                System.out.println("Servlet is instance of: " + servlet.getClass().getName());
+            }
+            */
+
             // Check if loading the servlet in this web application should be
             // allowed
             if (!isServletAllowed(servlet)) {
@@ -906,19 +986,31 @@ public final class StandardWrapper
             // Special handling for ContainerServlet instances
             if ((servlet instanceof ContainerServlet) &&
                 isContainerProvidedServlet(actualClass)) {
-System.out.println("calling setWrapper");                  
+System.out.println("calling setWrapper");
                 ((ContainerServlet) servlet).setWrapper(this);
-System.out.println("after calling setWrapper");                  
+System.out.println("after calling setWrapper");
             }
 
+            // 检查代码
+            // System.out.println("Loaded Servlet is allowed to initialize!");
 
             // Call the initialization method of this servlet
             try {
                 instanceSupport.fireInstanceEvent(InstanceEvent.BEFORE_INIT_EVENT,
                                                   servlet);
+
+                // 检查代码
+                // System.out.println("Before Servlet init()!");
                 servlet.init(facade);
+                // 检查代码
+                // System.out.println("After Servlet init()!");
+
                 // Invoke jspInit on JSP pages
                 if ((loadOnStartup > 0) && (jspFile != null)) {
+
+                    // 检查代码
+                    // System.out.println("JSP pages!");
+
                     // Invoking jspInit
                     HttpRequestBase req = new HttpRequestBase();
                     HttpResponseBase res = new HttpResponseBase();
@@ -926,14 +1018,19 @@ System.out.println("after calling setWrapper");
                     req.setQueryString("jsp_precompile=true");
                     servlet.service(req, res);
                 }
-                instanceSupport.fireInstanceEvent(InstanceEvent.AFTER_INIT_EVENT,
-                                                  servlet);
+                instanceSupport.fireInstanceEvent(InstanceEvent.AFTER_INIT_EVENT, servlet);
+
+                // 检查代码
+                // System.out.println("AFTER_INIT_EVENT fired!");
+
+
             } catch (UnavailableException f) {
-                instanceSupport.fireInstanceEvent(InstanceEvent.AFTER_INIT_EVENT,
-                                                  servlet, f);
+                instanceSupport.fireInstanceEvent(InstanceEvent.AFTER_INIT_EVENT, servlet, f);
                 unavailable(f);
                 throw f;
             } catch (ServletException f) {
+                // 检查代码
+                // System.out.println("ServletException captured here!");
                 instanceSupport.fireInstanceEvent(InstanceEvent.AFTER_INIT_EVENT,
                                                   servlet, f);
                 // If the servlet wanted to be unavailable it would have
@@ -956,7 +1053,17 @@ System.out.println("after calling setWrapper");
             }
             fireContainerEvent("load", this);
         } finally {
-            String log = SystemLogHandler.stopCapture();
+
+            // 检查代码
+            // System.out.println("In final finally block!");
+
+            /*
+             * ！！！问题就出在这里！！！
+             * 因为没有开启SystemLogHandler#startCapture()，所以也不用关
+             */
+            // String log = SystemLogHandler.stopCapture();
+            String log = null;
+
             if (log != null && log.length() > 0) {
                 if (getServletContext() != null) {
                     getServletContext().log(log);
@@ -965,6 +1072,10 @@ System.out.println("after calling setWrapper");
                 }
             }
         }
+
+        // 检查代码
+        // System.out.println("I can return servlet instance now!");
+
         return servlet;
 
     }
@@ -1094,7 +1205,8 @@ System.out.println("after calling setWrapper");
         ClassLoader classLoader = instance.getClass().getClassLoader();
 
         PrintStream out = System.out;
-        SystemLogHandler.startCapture();
+        // 这里会有问题
+        //SystemLogHandler.startCapture();
 
         // Call the servlet destroy() method
         try {
@@ -1119,7 +1231,9 @@ System.out.println("after calling setWrapper");
             // restore the context ClassLoader
             Thread.currentThread().setContextClassLoader(oldCtxClassLoader);
             // Write captured output
-            String log = SystemLogHandler.stopCapture();
+            // 这里会有问题
+            // String log = SystemLogHandler.stopCapture();
+            String log = null;
             if (log != null && log.length() > 0) {
                 if (getServletContext() != null) {
                     getServletContext().log(log);

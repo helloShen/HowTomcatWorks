@@ -15,8 +15,37 @@ import org.apache.catalina.DefaultContext;
 
 public class SimpleLoader implements Loader, Lifecycle {
 
-  public static final String WEB_ROOT =
-    System.getProperty("user.dir") + File.separator  + "webroot";
+    /**
+     * 不要使用下面这个路径，因为user.dir拿到的是.sh文件运行程序时的路径。
+     * 但如果用这个路径，程序照样能够运行，因为URLClassLoader会拿到运行时的classpath信息，
+     * 所以还是能找到目标ModernServlet.class文件。
+     *
+     * 但还是不要用下面这个路径。
+     */
+    /**
+    public static final String WEB_ROOT =
+      System.getProperty("user.dir") + File.separator  + "webroot";
+    */
+
+    /**
+     * 下面这个路径是正确的
+     */
+    public static final String ROOT =
+       System.getProperty("user.home") +
+       File.separator + "github" +
+       File.separator + "HowTomcatWorks" +
+       File.separator + "solutions";
+    public static final String CP =
+       ROOT +
+       File.separator + "bin" +
+       File.separator + "com" +
+       File.separator + "ciaoshen" +
+       File.separator + "howtomcatworks";
+
+    public static final String WEB_ROOT =
+       CP +
+       File.separator + "ex06" +
+       File.separator + "webroot";
   ClassLoader classLoader = null;
   Container container = null;
 
@@ -26,6 +55,7 @@ public class SimpleLoader implements Loader, Lifecycle {
       URLStreamHandler streamHandler = null;
       File classPath = new File(WEB_ROOT);
       String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString() ;
+      System.out.println("URL = " + repository);
       urls[0] = new URL(null, repository, streamHandler);
       classLoader = new URLClassLoader(urls);
     }

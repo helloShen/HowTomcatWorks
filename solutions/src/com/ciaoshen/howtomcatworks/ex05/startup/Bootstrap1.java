@@ -18,7 +18,7 @@ public final class Bootstrap1 {
 
     HttpConnector connector = new HttpConnector();
     Wrapper wrapper = new SimpleWrapper();
-    wrapper.setServletClass("ModernServlet");
+    wrapper.setServletClass("com.ciaoshen.howtomcatworks.ex06.webroot.ModernServlet");
     Loader loader = new SimpleLoader();
     Valve valve1 = new HeaderLoggerValve();
     Valve valve2 = new ClientIPLoggerValve();
