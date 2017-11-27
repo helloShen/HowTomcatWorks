@@ -1,0 +1,65 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 14 
+### Use this Script to run each exercise in Chapter 14
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+WEB_APPS="${ROOT}/webapps/app14/WEB-INF/classes/"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex14"
+BOOT="${SRC_DIR}/${PACK}/startup"
+CORE="${SRC_DIR}/${PACK}/core"
+WEB="${SRC_DIR}/${PACK}/webroot"
+REALM="${SRC_DIR}/${PACK}/realm"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex14"
+PRE_BOOT="${PRE}.startup"
+PRE_CORE="${PRE}.core"
+PRE_WEB="${PRE}.webroot"
+
+# lib
+LIB="${ROOT}/lib"
+SERVLET="${LIB}/servlet.jar"
+COMMON="${LIB}/commons-collections.jar"
+COMMON_DIGESTER="${LIB}/commons-digester.jar"
+COMMON_LOG="${LIB}/commons-logging.jar"
+TOMCAT_UTIL="${LIB}/tomcat-util.jar"
+NAMING_COMMON="${LIB}/naming-common.jar"
+NAMING_FACTORY="${LIB}/naming-factory.jar"
+
+
+
+### 编译共享Servlet程序
+javac -source 1.4 -d ${WEB_APPS} -cp "${CLASS_DIR}:${SERVLET}" "${WEB}/PrimitiveServlet.java" "${WEB}/ModernServlet.java"
+
+############################################################ 
+### >>> 编译新的org.apache.catalina.connector.http10.HttpProcessor.java <<<
+### 为了显示HTTP请求的请求行和请求头
+############################################################ 
+CATA_SRC="${ROOT}/src/"
+CATA_CLASS="${ROOT}"
+
+### 重新编译HttpConnector.java
+javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/connector/http10/HttpConnector.java"
+
+### 重新编译HttpProcessor.java
+javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/connector/http10/HttpProcessor.java"
+
+
+### 编译Bootstrap.java
+javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON_DIGESTER}:${COMMON}:${NAMING_FACTORY}:${NAMING_COMMON}" "${CORE}/SimpleContextConfig.java" "${BOOT}/Bootstrap.java"
+
+### 运行Bootstrap.class
+java -cp "${CLASS_DIR}:${ROOT}:${SERVLET}:${COMMON}:${COMMON_DIGESTER}:${NAMING_FACTORY}:${NAMING_COMMON}" "${PRE_BOOT}.Bootstrap"
+
