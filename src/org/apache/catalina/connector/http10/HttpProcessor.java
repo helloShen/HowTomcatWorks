@@ -391,6 +391,10 @@ final class HttpProcessor
 
             // Read the next header line
             String line = read(input);
+
+            /** 我加的代码，显示HTTP请求的请求头 */
+            System.out.println(line);
+
             if ((line == null) || (line.length() < 1))
                 break;
 
@@ -468,7 +472,7 @@ final class HttpProcessor
                         String cTemp = country.substring(0, vDash);
                         variant = country.substring(vDash + 1);
                         country = cTemp;
-                    } 
+                    }
                 }
                 request.addLocale(new Locale(language, country, variant));
               }
@@ -547,6 +551,10 @@ final class HttpProcessor
 
         // Parse the incoming request line
         String line = read(input);
+
+        /** 我加的代码，显示HTTP请求的请求行 */
+        System.out.println(line);
+
         if (line == null)
             throw new ServletException
                 (sm.getString("httpProcessor.parseRequest.read"));
@@ -638,6 +646,9 @@ final class HttpProcessor
      */
     private void process(Socket socket) {
 
+        /** 我加的代码，告诉我是否执行了process()函数 */
+        System.out.println("I am in HttpProcessor#process() method!");
+
         boolean ok = true;
         InputStream input = null;
         OutputStream output = null;
@@ -662,9 +673,13 @@ final class HttpProcessor
         try {
             if (ok) {
                 parseConnection(socket);
+
+                /** 我加的代码，用来显示HTTP请求的请求行和请求头部分 */
+                System.out.println("\n====================================");
                 parseRequest(input);
                 if (!request.getRequest().getProtocol().startsWith("HTTP/0"))
                     parseHeaders(input);
+                System.out.println("====================================\n");
             }
         } catch (Exception e) {
             try {
@@ -795,10 +810,16 @@ final class HttpProcessor
         // Process requests until we receive a shutdown signal
         while (!stopped) {
 
+            /** 我加的代码， 看HttpProcessor线程有没有正常运行。 */
+            System.out.println(this + " await() income socket!");
+
             // Wait for the next socket to be assigned
             Socket socket = await();
             if (socket == null)
                 continue;
+
+            /** 我加的代码， 看HttpProcessor的process()函数有没有被正常调用。 */
+            System.out.println(this + " invoke process() method for " + socket + "!");
 
             // Process the request from this socket
             process(socket);
@@ -872,7 +893,7 @@ final class HttpProcessor
 
 
     /**
-     * Get the lifecycle listeners associated with this lifecycle. If this 
+     * Get the lifecycle listeners associated with this lifecycle. If this
      * Lifecycle has no listeners registered, a zero-length array is returned.
      */
     public LifecycleListener[] findLifecycleListeners() {

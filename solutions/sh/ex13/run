@@ -9,7 +9,7 @@
 
 # common dir
 ROOT="/Users/Wei/github/HowTomcatWorks"
-WEB_APPS="${ROOT}/webapps/app12/WEB-INF/classes/"
+WEB_APPS="${ROOT}/webapps/app13/WEB-INF/classes/"
 MAIN="${ROOT}/solutions"
 CLASS_DIR="${MAIN}/bin"
 SRC_DIR="${MAIN}/src"

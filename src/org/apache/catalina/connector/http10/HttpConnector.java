@@ -918,10 +918,18 @@ public final class HttpConnector
         // Loop until we receive a shutdown command
         while (!stopped) {
 
+            /** 我加的代码， 看HttpConnector线程有没有正常运行。 */
+            System.out.println("In " + this + " thread run() method!");
+
             // Accept the next incoming connection from the server socket
             Socket socket = null;
             try {
+
                 socket = serverSocket.accept();
+
+                /** 我加的代码， 看HttpConnecter线程有没有正常接收Socket。 */
+                System.out.println(this + " accept income socket!");
+
                 if (connectionTimeout > 0)
                     socket.setSoTimeout(connectionTimeout);
             } catch (AccessControlException ace) {
@@ -935,6 +943,10 @@ public final class HttpConnector
 
             // Hand this socket off to an appropriate processor
             HttpProcessor processor = createProcessor();
+
+            /** 我加的代码， 看HttpConnecter线程有没有正常拿到HttpProcessor实例的引用。 */
+            System.out.println(this + " use HttpProcessor to process income socket!");
+
             if (processor == null) {
                 try {
                     log(sm.getString("httpConnector.noProcessor"));
@@ -945,6 +957,9 @@ public final class HttpConnector
                 continue;
             }
             processor.assign(socket);
+
+            /** 我加的代码， 看HttpConnecter线程有没有正常跳转到HttpProcessor的线程。 */
+            System.out.println(this + " use HttpProcessor to process income socket!");
 
             // The processor will recycle itself when it finishes
 
@@ -1008,7 +1023,7 @@ public final class HttpConnector
 
 
     /**
-     * Get the lifecycle listeners associated with this lifecycle. If this 
+     * Get the lifecycle listeners associated with this lifecycle. If this
      * Lifecycle has no listeners registered, a zero-length array is returned.
      */
     public LifecycleListener[] findLifecycleListeners() {
