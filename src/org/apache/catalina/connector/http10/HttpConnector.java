@@ -919,7 +919,7 @@ public final class HttpConnector
         while (!stopped) {
 
             /** 我加的代码， 看HttpConnector线程有没有正常运行。 */
-            System.out.println("In " + this + " thread run() method!");
+            // System.out.println("In " + this + " thread run() method!");
 
             // Accept the next incoming connection from the server socket
             Socket socket = null;
@@ -928,7 +928,7 @@ public final class HttpConnector
                 socket = serverSocket.accept();
 
                 /** 我加的代码， 看HttpConnecter线程有没有正常接收Socket。 */
-                System.out.println(this + " accept income socket!");
+                // System.out.println(this + " accept income socket!");
 
                 if (connectionTimeout > 0)
                     socket.setSoTimeout(connectionTimeout);
@@ -945,7 +945,7 @@ public final class HttpConnector
             HttpProcessor processor = createProcessor();
 
             /** 我加的代码， 看HttpConnecter线程有没有正常拿到HttpProcessor实例的引用。 */
-            System.out.println(this + " use HttpProcessor to process income socket!");
+            // System.out.println(this + " use HttpProcessor to process income socket!");
 
             if (processor == null) {
                 try {
@@ -959,7 +959,7 @@ public final class HttpConnector
             processor.assign(socket);
 
             /** 我加的代码， 看HttpConnecter线程有没有正常跳转到HttpProcessor的线程。 */
-            System.out.println(this + " use HttpProcessor to process income socket!");
+            // System.out.println(this + " use HttpProcessor to process income socket!");
 
             // The processor will recycle itself when it finishes
 

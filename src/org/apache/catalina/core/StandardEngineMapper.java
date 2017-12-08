@@ -180,6 +180,10 @@ public class StandardEngineMapper
 
         // Extract the requested server name
         String server = request.getRequest().getServerName();
+
+        /** 我加的代码，看一看解析出的server字段的值 */
+        System.out.println("Server Name (HttpServletRequestImpl#getServerName()): " + server);
+
         if (server == null) {
             server = engine.getDefaultHost();
             if (update)
@@ -196,8 +200,16 @@ public class StandardEngineMapper
             engine.log(" Trying a direct match");
         Host host = (Host) engine.findChild(server);
 
+        /** 我加的代码，告诉我通过Server Name查找Host子容器成功！ */
+        if (host != null) {
+            System.out.println("Server Name: " + server + "，匹配成功！");    
+        }
         // Find a matching Host by alias.  FIXME - Optimize this!
         if (host == null) {
+
+            /** 我加的代码，告诉我Server Name有没有配成功 */
+            System.out.println("Server Name: \"" + server + "\" 匹配失败！");
+
             if (debug >= 2)
                 engine.log(" Trying an alias match");
             Container children[] = engine.findChildren();
@@ -216,6 +228,10 @@ public class StandardEngineMapper
 
         // Trying the "default" host if any
         if (host == null) {
+
+            /** 我加的代码，告诉我Server Name有没有配成功，而且别名匹配也失败！ */
+            System.out.println("别名匹配失败！尝试启用默认Host！");
+
             if (debug >= 2)
                 engine.log(" Trying the default host");
             host = (Host) engine.findChild(engine.getDefaultHost());

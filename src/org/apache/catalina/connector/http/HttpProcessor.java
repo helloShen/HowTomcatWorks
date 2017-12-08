@@ -529,6 +529,9 @@ final class HttpProcessor
                 }
             }
 
+            /** 我加的代码，为了完整显示传进来的HTTP请求头 */
+            System.out.println(new String(header.name) + ": " + new String(header.value));
+
             String value = new String(header.value, 0, header.valueEnd);
             if (debug >= 1)
                 log(" Header " + new String(header.name, 0, header.nameEnd)
@@ -651,6 +654,9 @@ final class HttpProcessor
 
         // Parse the incoming request line
         input.readRequestLine(requestLine);
+
+        /** 我加的代码，为了显示传进来的完整的HTTP请求行 */
+        System.out.println(requestLine);
 
         // When the previous method returns, we're actually processing a
         // request
@@ -915,10 +921,20 @@ final class HttpProcessor
                 if (ok) {
 
                     parseConnection(socket);
+
+                    /** 我加的代码，为了显示完整的HTTP请求 */
+                    System.out.println("===============================================");
+                    System.out.println("                    HTTP Request                ");
+                    System.out.println("-----------------------------------------------");
+
                     parseRequest(input, output);
                     if (!request.getRequest().getProtocol()
                         .startsWith("HTTP/0"))
                         parseHeaders(input);
+
+                    System.out.println("================================================");
+                    System.out.println("\n\n");
+
                     if (http11) {
                         // Sending a request acknowledge back to the client if
                         // requested.

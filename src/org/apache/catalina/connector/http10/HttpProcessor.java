@@ -393,7 +393,7 @@ final class HttpProcessor
             String line = read(input);
 
             /** 我加的代码，显示HTTP请求的请求头 */
-            System.out.println(line);
+            // System.out.println(line);
 
             if ((line == null) || (line.length() < 1))
                 break;
@@ -553,7 +553,7 @@ final class HttpProcessor
         String line = read(input);
 
         /** 我加的代码，显示HTTP请求的请求行 */
-        System.out.println(line);
+        // System.out.println(line);
 
         if (line == null)
             throw new ServletException
@@ -647,7 +647,7 @@ final class HttpProcessor
     private void process(Socket socket) {
 
         /** 我加的代码，告诉我是否执行了process()函数 */
-        System.out.println("I am in HttpProcessor#process() method!");
+        // System.out.println("I am in HttpProcessor#process() method!");
 
         boolean ok = true;
         InputStream input = null;
@@ -675,11 +675,11 @@ final class HttpProcessor
                 parseConnection(socket);
 
                 /** 我加的代码，用来显示HTTP请求的请求行和请求头部分 */
-                System.out.println("\n====================================");
+                // System.out.println("\n====================================");
                 parseRequest(input);
                 if (!request.getRequest().getProtocol().startsWith("HTTP/0"))
                     parseHeaders(input);
-                System.out.println("====================================\n");
+                // System.out.println("====================================\n");
             }
         } catch (Exception e) {
             try {

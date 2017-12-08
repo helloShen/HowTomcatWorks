@@ -47,7 +47,7 @@ public final class Bootstrap {
 
     Host host = new StandardHost();
     host.addChild(context);
-    host.setName("anti-localhost");
+    host.setName("localhost");
     host.setAppBase("webapps");
 
     Loader loader = new WebappLoader();
@@ -58,7 +58,7 @@ public final class Bootstrap {
 
     Engine engine = new StandardEngine();
     engine.addChild(host);
-    engine.setDefaultHost("anti-localhost");
+    engine.setDefaultHost("localhost");
 
     Service service = new StandardService();
     service.setName("Stand-alone Service");
