@@ -1,0 +1,87 @@
+#!/bin/bash
+#############################################################
+###
+### How Tomcat Works - Chapter 20
+### Use this Script to run each exercise in Chapter 20
+### Uncomment the specificate line to activate the command
+###
+#############################################################
+
+# common dir
+ROOT="/Users/Wei/github/HowTomcatWorks"
+WEB_APPS="${ROOT}/webapps/app20/WEB-INF/classes/"
+MAIN="${ROOT}/solutions"
+CLASS_DIR="${MAIN}/bin"
+SRC_DIR="${MAIN}/src"
+SCRIP_DIR="${MAIN}/sh"
+
+# package
+PACK="com/ciaoshen/howtomcatworks/ex20"
+STD="${SRC_DIR}/${PACK}/standardmbeantest"
+MOD1="${SRC_DIR}/${PACK}/modelmbeantest1"
+MOD2="${SRC_DIR}/${PACK}/modelmbeantest2"
+
+# class prefix
+PRE="com.ciaoshen.howtomcatworks.ex20"
+PRE_STD="${PRE}.standardmbeantest"
+PRE_MOD1="${PRE}.modelmbeantest1"
+PRE_MOD2="${PRE}.modelmbeantest1"
+
+
+# lib
+LIB="${ROOT}/lib"
+SERVLET="${LIB}/servlet.jar"
+COMMON="${LIB}/commons-collections.jar"
+COMMON_DIGESTER="${LIB}/commons-digester.jar"
+COMMON_LOG="${LIB}/commons-logging.jar"
+TOMCAT_UTIL="${LIB}/tomcat-util.jar"
+NAMING_COMMON="${LIB}/naming-common.jar"
+NAMING_FACTORY="${LIB}/naming-factory.jar"
+COMMON_BEAN="${LIB}/commons-beanutils.jar"
+COMMON_MOD="${LIB}/commons-modeler.jar"
+
+
+
+############################################################ 
+### 这张不需要用到Servlet程序
+### 编译共享Servlet程序
+############################################################ 
+#javac -source 1.4 -d ${WEB_APPS} -cp "${CLASS_DIR}:${SERVLET}" "${WEB}/PrimitiveServlet.java" "${WEB}/ModernServlet.java"
+
+
+############################################################ 
+### 14章需要重新编译这些库，16章不需要
+### >>> 编译新的org.apache.catalina.connector.http10.HttpProcessor.java <<<
+### 为了显示HTTP请求的请求行和请求头
+############################################################ 
+CATA_SRC="${ROOT}/src/"
+CATA_CLASS="${ROOT}"
+
+### 重新编译HttpConnector.java
+#javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/connector/http/HttpConnector.java"
+
+### 重新编译HttpProcessor.java
+#javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/connector/http/HttpProcessor.java"
+
+### 重新编译StandardEngineMapper.java
+#javac -source 1.4 -d ${CATA_CLASS} -sourcepath ${CATA_SRC} -cp "${CATA_CLASS}:${LIB}/*" "${CATA_SRC}/org/apache/catalina/core/StandardEngineMapper.java"
+
+
+### 编译StandardAgent.java
+#javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}" "${STD}/Car.java" "${STD}/CarMBean.java" "${STD}/StandardAgent.java"
+
+### 运行StandardAgent.class
+#java -cp "${CLASS_DIR}" "${PRE_STD}.StandardAgent"
+
+### 编译第1个ModelAgent.java
+#javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}" "${MOD1}/Car.java" "${MOD1}/ModelAgent.java"
+
+### 运行第1个ModelAgent.class
+#java -cp "${CLASS_DIR}" "${PRE_MOD1}.ModelAgent"
+
+### 编译第2个ModelAgent.java
+javac -source 1.4 -d ${CLASS_DIR} -sourcepath ${SRC_DIR} -cp "${CLASS_DIR}:${COMMON_MOD}" "${MOD2}/Car.java" "${MOD2}/ModelAgent.java"
+
+### 运行第2个ModelAgent.class
+java -cp "${CLASS_DIR}:${COMMON_MOD}" "${PRE_MOD2}.ModelAgent"
+
